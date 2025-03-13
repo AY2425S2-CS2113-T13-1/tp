@@ -1,4 +1,4 @@
-package backend.storage;
+package seedu.backend.storage;
 
 public class RecipeCatalogue {
 }
