@@ -29,7 +29,7 @@ test {
 }
 
 application {
-    mainClass.set("ui.KitchenCTRL")
+    mainClass.set("seedu.ui.KitchenCTRL")
 }
 
 shadowJar {
