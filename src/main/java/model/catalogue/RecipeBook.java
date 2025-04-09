@@ -132,7 +132,8 @@ public class RecipeBook extends Catalogue<Recipe> {
 
             if (similarRecipes.isEmpty()) {
                 addRecipe(recipe);
-                return new CommandResult(recipe.getRecipeName() + " added to recipe book.");
+                setCurrentScreen(RECIPE);
+                return new EditRecipeCommand(recipe.getRecipeName()).execute();
             }
 
             for (Recipe existing : similarRecipes) {
