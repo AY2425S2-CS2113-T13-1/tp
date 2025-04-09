@@ -132,7 +132,7 @@ public class RecipeBook extends Catalogue<Recipe> {
 
             if (similarRecipes.isEmpty()) {
                 addRecipe(recipe);
-                setCurrentScreen(RECIPE);
+                if (!isSilenced) { setCurrentScreen(RECIPE); }
                 return new EditRecipeCommand(recipe.getRecipeName()).execute();
             }
 
